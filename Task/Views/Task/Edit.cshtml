@@ -1,0 +1,45 @@
+﻿@using Task.Models Namespace
+@model TaskViewModel
+
+
+<form method="post" asp-controller="Task" asp-action="Edit">
+    @*<input asp-for="Id" hidden />*@
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary">Edit Task</h2>
+            <hr />
+        </div>
+        <div class="mb-3 row p-1">
+            <label asp-for="Title" class="p-0">Title</label>
+            <input asp-for="Title" class="form-control"/>
+        </div>
+        <div class="mb-3 row p-1">
+            <label asp-for="CreatedOn" class="p-0">Created On</label>
+            <input readonly asp-for="CreatedOn" class="form-control" style="color: #212529; background-color: #fff;" />
+        </div>
+        <div class="mb-3 row p-1">
+            <label asp-for="Comments" class="p-0">Comments</label>
+            <input asp-for="Comments" class="form-control" />
+        </div>
+        <div class="mb-3 row p-1">
+            <label class="p-0">Assign</label>
+            <select class="form-select" asp-for="SelectedUser" asp-items="Model.UserSelectList"></select>
+        </div>
+        <div class="mb-3 row p-1">
+            <label class="p-0">Priority</label>
+            <select class="form-select" asp-for="SelectedPriority" asp-items="Model.PrioritySelectList"></select>
+        </div>
+        <div class="mb-3 row p-1">
+            <label class="p-0">Status</label>
+            <select class="form-select" asp-for="SelectedStatus" asp-items="Model.StatusSelectList"></select>
+        </div>
+        <div class="row">
+            <div class="col-6 col-md-3">
+                <button type="submit" class="btn btn-primary form-control">Update</button>
+            </div>
+            <div class="col-6 col-md-3">
+                <a asp-controller="Task" asp-action="AllTasks" class="btn btn-secondary form-control">Cancel</a>
+            </div>
+        </div>
+    </div>
+</form>

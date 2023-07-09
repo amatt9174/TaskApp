@@ -1,6 +1,8 @@
-﻿namespace Task.Models
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace Task.Models
 {
-    public class Task
+    public class TaskModel
     {
         public int Id { get; set; }
         public string? Title { get; set; }

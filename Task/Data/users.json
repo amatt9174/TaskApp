@@ -1,0 +1,30 @@
+[
+  {
+    "Id": 1,
+    "Name": "Clint Eastwood"
+  },
+  {
+    "Id": 2,
+    "Name": "Michael Douglas"
+  },
+  {
+    "Id": 3,
+    "Name": "Robert Duvall"
+  },
+  {
+    "Id": 4,
+    "Name": "Jack Palance"
+  },
+  {
+    "Id": 5,
+    "Name": "Charles Bronson"
+  },
+  {
+    "Id": 6,
+    "Name": "John Cusack"
+  },
+  {
+    "Id": 7,
+    "Name": "Dirty Harry"
+  }
+]

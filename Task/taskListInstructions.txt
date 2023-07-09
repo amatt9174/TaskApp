@@ -1,0 +1,18 @@
+Create a production ready (tests not required) Whiteboard application.  The purpose
+of this application will be to create and track high-level tasks given to users.
+
+Requirements:
+
+- No authentication/authorization required.  If you can access the site, you
+  can do everything.
+- Users to be stored in file on disk with the name "users.data".  Data in
+  this file can be formatted/read however you would like.
+- Tasks to be stored in file on disk with the name "tasks.data".  Data in
+  this file can be formatted/read however you would like.
+- At a minimum, the task object should contain the following properties (don't get carried away adding a lot more - if any):
+  -- Id, Title, CreatedOn, Comments, AssignedTo, Status, StatusChangedOn
+- Two views should be created
+  -- One to show the list of tasks not closed or completed => simple table view (https://praxie.com/wp-content/uploads/2022/05/Task-List-Thumbnail-Template.png)
+  -- One to let user edit task
+- Write in way that updating from flat files on disk to something like database
+  would require little effort.  You do not need to implement the database CRUD.
